@@ -1,0 +1,80 @@
+/* Start Global Rules */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+body {
+  font-family: "Open Sans", sans-serif;
+}
+.container {
+  margin: 0 auto;
+  width: 80vw;
+}
+@media (min-width: 1200px) {
+  .container {
+    width: 1170px;
+  }
+}
+@media (max-width: 480px) {
+  .container {
+    width: 300px;
+  }
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+}
+/* End Global Rules */
+/* Start Main */
+main {
+  padding: 20px;
+  background-color: #edebeb;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+main h1 {
+  background-color: aliceblue;
+  padding: 10px 20px;
+  border-radius: 7px;
+  margin-bottom: 20px;
+}
+main article {
+  background-color: #00ffff24;
+  width: 100%;
+  padding: 20px;
+  display: grid;
+  grid-template-columns: repeat(4, auto);
+  gap: 20px;
+}
+main article .box {
+  display: flex;
+  justify-content: center;
+}
+main article .box span {
+  font-size: 22px;
+  font-weight: 400;
+  padding: 10px 20px;
+  background-color: #ff00008c;
+  border-radius: 7px;
+  display: block;
+  width: fit-content;
+  transition: 100ms;
+  cursor: pointer;
+  user-select: none;
+}
+main article .box span:hover {
+  background-color: #ff1313;
+}
+main article .box span:active {
+  background-color: #ff00008c;
+}
+/* End Main */
